@@ -28,7 +28,7 @@ jobs:
           submodules: recursive
 
       - name: Install Dependencies
-        run: brew install ldid dpkg make coreutils
+        run: brew install ldid dpkg make coreutils unzip
               
 
       - name: Set PATH environment variable
