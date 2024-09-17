@@ -84,7 +84,7 @@ jobs:
           cd ${{ github.workspace }}/main/packages
           tweakName=$(ls)
           cd ${{ github.workspace }}/main
-          pip3 install --force-reinstall lief git+https://github.com/asdfzxcvbn/pyzule-rw.git#egg=cyan
+          pip3 install --force-reinstall lief git+https://github.com/asdfzxcvbn/pyzule-rw.git@v1.1.2
           cyan -i YouTubeMusic.ipa -o packages/YTMusicUltimate.ipa -uwsf packages/$tweakName
 
       - name: Create Release
