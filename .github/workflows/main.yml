@@ -28,7 +28,7 @@ jobs:
           submodules: recursive
 
       - name: Install Dependencies
-        run: brew install ldid dpkg make coreutils zip unzip
+        run: brew install ldid dpkg make coreutils
               
 
       - name: Set PATH environment variable
@@ -84,7 +84,7 @@ jobs:
           cd ${{ github.workspace }}/main/packages
           tweakName=$(ls)
           cd ${{ github.workspace }}/main
-          pip3 install --force-reinstall lief git+https://github.com/asdfzxcvbn/pyzule-rw.git@v1.1.2
+          pip3 install --force-reinstall lief git+https://github.com/asdfzxcvbn/pyzule-rw.git@v1.1.5
           cyan -i YouTubeMusic.ipa -o packages/YTMusicUltimate.ipa -uwsf packages/$tweakName
 
       - name: Create Release
